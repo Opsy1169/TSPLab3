@@ -1,0 +1,77 @@
+div{
+    color: black;
+}
+@font-face {
+    font-family: BroadwayC;
+    src: url(11430.ttf);
+}
+@font-face {
+    font-family: Painting;
+    src: url("11553.ttf");
+}
+.myclass{
+    background-image: url("0261.jpg");
+    /*background-color: black;*/
+    background-size: auto;
+    color: black;
+    text-align: center;
+    font-size: 24pt;
+    font-family: BroadwayC;
+    font-weight: bold;
+    border-radius: 10px;
+
+}
+
+.mysecondclass{
+    font-family: Painting;
+}
+.errorclass{
+    background-size: auto;
+    color: #7e0200;
+    text-align: center;
+    font-family: BroadwayC;
+    text-decoration: underline;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.errorclass:hover:after{
+    content: attr(data-title);
+    position: absolute;
+     bottom: 50%; right: 10%;
+    z-index: 1;
+    background: rgba(255,255,230,0.9);
+    font-size: 16px;
+    padding: 5px 10px;
+    border: 1px solid #333;
+}
+
+.buttonclass {
+    font-family: Painting;
+    display: inline-block;
+    line-height: 50px;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px rgba(255,255,255,.2), 0 -1px rgba(0,0,0,.8);
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    background: black ;
+    color: white;
+    user-select: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.buttonclass:hover {
+    color: rgb(0,59,66);
+    cursor: pointer;
+}
+.buttonclass:active {
+    padding-bottom: 1px;
+    box-shadow:
+            inset rgba(0,0,0,1) 0 1px 3px,
+            inset rgba(0,0,0,.6) 0 -2px 5px,
+            inset rgba(252,255,255,.7) 0 2px 5px,
+            0 1px rgba(255,255,255,.08);
+    color: rgb(128,207,214);
+}
